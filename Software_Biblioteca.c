@@ -1,7 +1,3 @@
-
-/*  Software para o trabalho final de laboratório de ICC, professor Jó
-    Alunos: Arthur Gomes Mesquita/ Allan Vitor/ Matheus Aguiar  */
-
 #include <stdio.h>
 #include <stdlib.h>
 #define MAX 100
@@ -19,6 +15,7 @@ typedef struct {
   int codigo;
   int volume;
   int edicao;
+  int estoque;
   char editora[MAX];
 } t_livro;
 
@@ -67,13 +64,13 @@ void cadastro_usuario (t_usuario *usuario)
   printf ("%d", usuario->senha);
 }
 
-void cadastro_livro(t_livro *livro) 
+void cadastro_livro(t_livro *livro)
 {
   printf("Insira o nome do livro: ");
   fflush(stdin);
   fgets (livro->nome_livro, 100, stdin);
 //  printf("%s\n", livro->nome_livro);
-  
+
   printf ("Digite o nome do autor: ");
   fflush(stdin);
   fgets (livro->autor, 100, stdin);
@@ -99,5 +96,8 @@ void cadastro_livro(t_livro *livro)
   fflush(stdin);
   fgets (livro->editora, 100, stdin);
 //  printf("%s\n", livro->editora);
-  
+
+  printf ("Digite a quantidade de livros no estoque: ");
+  scanf ("%d", &livro->estoque);
+ // printf ("%d", livro->estoque);
 }
