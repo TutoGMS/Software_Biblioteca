@@ -1,3 +1,11 @@
+
+/* 
+  Alunos:
+  Allan Vitor de Souza Silva        N°USP: 14712657
+  Arthur Gomes Mesquita de Souza    N°USP: 14835157
+  Matheus Aguiar                    N°USP: 14781512
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
